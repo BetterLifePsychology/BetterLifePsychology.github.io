@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+      #header {
+        background-color: #ddd;
+        height: 380px;
+        width: 960px;
+        margin: 20px auto;
+      }
+      #header {
+        display: grid;
+        grid-template-columns: 300px 660px;
+        grid-template-rows: 230px 150px;
+        grid-template-areas: "logo title" "logo description"
+      }
+      #header .logo {
+        grid-area: logo;
+        padding-top: 30px;
+        padding-left: 25px;
+      }
+      #header .title {
+        padding-top: 20px;
+      }
+      #header .title h1 {
+        margin: 0px;
+        font-size: 120px;
+        text-align: center;
+        font-family: sans-serif;
+        padding-right: 40px;
+      }
+      #header .title h2 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 40px;
+        text-align: center;
+        font-family: sans-serif;
+        letter-spacing: 35px;
+        line-height: 10px;
+      }
+      #header .description {
+        grid-area: description;
+        text-align: center;
+        font-size: 30px;
+        padding: 0px 60px;
+      }
+      .post {
+        background-color: #eee;
+        height: auto;
+        width: 860px;
+        margin: 40px auto;
+      }
+      .post {
+        display: grid;
+        grid-template-columns: 240px 620px;
+        grid-template-rows: auto auto 100px;
+        grid-template-areas: "date title" "letter lead" "more more"
+      }
+      .post .date {
+        padding-top: 85px;
+        padding-left: 50px;
+        font-size: 20px;
+      }
+      .post .title {
+        padding-left: 15px;
+        padding-right: 40px;
+        padding-top: 75px;
+        padding-bottom: 20px;
+        font-size: 30px;
+      }
+      .post .letter {
+        font-size: 170px;
+        padding-left: 30px;
+      }
+      .post .lead {
+        padding-left: 15px;
+        padding-right: 40px;
+        padding-top: 30px;
+        font-size: 22px;
+      }
+      .post .more {
+        grid-area: more;
+        font-size: 20px;
+        text-align: right;
+        padding-top: 45px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+      }
+      #footer {
+        background-color: #ddd;
+        height: 45px;
+        width: 100%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div class="logo">
+          <img src="tree.png"/>
+        </div>
+        <div class="title">
+          <h1>Better Life</h1>
+          <h2>Psychology</h2>
+        </div>
+        <div class="description">
+          Achieve better life through understanding and practicing universal laws human of psychology
+        </div>
+      </div>
+      <div class="post">
+        <div class="date">
+          January 2018
+        </div>
+        <div class="title">
+          Future self #1 motivation killer
+        </div>
+        <div class="letter">
+          Ro
+        </div>
+        <div class="lead">
+          Rogers believed that every person could achieve their goals, wishes, and desires in life. When they did self-actualization took place. For Rogers (1961) people who can self-actualize, and that is not all of us, are called fully functioning persons. This means that the person is in touch with the here and now, his or her subjective experiences and feelings, continually growing and changing.
+        </div>
+        <div class="more">
+          Read  more …
+        </div>
+      </div>
+      <div class="post">
+        <div class="date">
+          December 2017
+        </div>
+        <div class="title">
+          10 ways to use minimalism to reduce stress
+        </div>
+        <div class="letter">
+          Mi
+        </div>
+        <div class="lead">
+          Minimalism is a tool that can assist you in finding freedom. Freedom from fear. Freedom from worry. Freedom from overwhelm. Freedom from guilt. Freedom from depression. Freedom from the trappings of the consumer culture we’ve built our lives around. Real freedom.
+        </div>
+        <div class="more">
+          Read  more …
+        </div>
+      </div>
+      <div class="post">
+        <div class="date">
+          January 2018
+        </div>
+        <div class="title">
+          Agile is new system to achieve your goals in stress free manner
+        </div>
+        <div class="letter">
+          Ag
+        </div>
+        <div class="lead">
+          Agile software development describes an approach to software development under which requirements and solutions evolve through the collaborative effort of self-organizing cross-functional teams and their customes users. It advocates adaptive planning, evolutionary development, early delivery, and continuous improvement, and it encourages rapid and flexible response to change.
+        </div>
+        <div class="more">
+          Read  more …
+        </div>
+      </div>
+      <div id="footer">
+        footer
+      </div>
+    </div>
+  </body>
+</html>
