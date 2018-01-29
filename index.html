@@ -7,10 +7,11 @@
         padding: 0px;
       }
       #header {
-        background-color: #ddd;
         height: 380px;
         width: 960px;
         margin: 20px auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
       }
       #header {
         display: grid;
@@ -32,6 +33,7 @@
         text-align: center;
         font-family: sans-serif;
         padding-right: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
       }
       #header .title h2 {
         margin: 0px;
@@ -41,18 +43,21 @@
         font-family: sans-serif;
         letter-spacing: 35px;
         line-height: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
       }
       #header .description {
         grid-area: description;
         text-align: center;
         font-size: 30px;
         padding: 0px 60px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
       }
       .post {
-        background-color: #eee;
         height: auto;
         width: 860px;
         margin: 40px auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
       }
       .post {
         display: grid;
@@ -64,6 +69,7 @@
         padding-top: 85px;
         padding-left: 50px;
         font-size: 20px;
+        color: #3F3E47;
       }
       .post .title {
         padding-left: 15px;
@@ -71,16 +77,20 @@
         padding-top: 75px;
         padding-bottom: 20px;
         font-size: 30px;
+        color: #FAC834;
       }
       .post .letter {
         font-size: 170px;
         padding-left: 30px;
+        color: #3F3E47;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
       }
       .post .lead {
         padding-left: 15px;
         padding-right: 40px;
         padding-top: 30px;
         font-size: 22px;
+        color: #3F3E47;
       }
       .post .more {
         grid-area: more;
@@ -89,26 +99,43 @@
         padding-top: 45px;
         padding-right: 30px;
         padding-bottom: 30px;
+        color: #FAC834;
       }
       #footer {
         background-color: #ddd;
-        height: 45px;
         width: 100%;
         margin: auto;
+        color: #DBDADA;
+        background-color: #3F3E47;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+      .yellow {
+        color: #FAC834;
+      }
+      .dark-background {
+        background-color: #3F3E47;
+      }
+      .dark {
+        color: #3F3E47;
+      }
+      .grey {
+        color: #DBDADA;
       }
     </style>
   </head>
   <body>
     <div id="container">
-      <div id="header">
+      <div id="header" class="dark-background">
         <div class="logo">
           <img src="tree.png"/>
         </div>
-        <div class="title">
+        <div class="title yellow">
           <h1>Better Life</h1>
           <h2>Psychology</h2>
         </div>
-        <div class="description">
+        <div class="description grey">
           Achieve better life through understanding and practicing universal laws human of psychology
         </div>
       </div>
@@ -164,7 +191,7 @@
         </div>
       </div>
       <div id="footer">
-        footer
+        @Copyright 2018
       </div>
     </div>
   </body>
